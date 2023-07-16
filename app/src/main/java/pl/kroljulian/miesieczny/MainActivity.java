@@ -3,6 +3,7 @@ package pl.kroljulian.miesieczny;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         //register button and view
         choosePictureButton = findViewById(R.id.choosePictureButton);
         ticketImageView = findViewById(R.id.ticketImageView);
+        SharedPreferences mPrefs = getSharedPreferences("label", 0);
+        SharedPreferences.Editor mEditor = mPrefs.edit();
 
         choosePictureButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
                 imageChooser();
             }
         });
+        String mString = mPrefs.getString("imageUriVariable", "../../../../res/mipmap-hdpi/ic_launcher.webp");
+        ticketImageView.setImageURI(Uri.parse(mString));
     }
 
     void imageChooser() {
@@ -46,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
         if(resultCode == RESULT_OK) {
             if (requestCode == SELECT_PICTURE) {
                 Uri selectedImageUri = data.getData();
+                SharedPreferences mPrefs = getSharedPreferences("label", 0);
+                SharedPreferences.Editor mEditor = mPrefs.edit();
+                mEditor.putString("imageUriVariable", String.valueOf(selectedImageUri)).commit();
                 if (null != selectedImageUri) {
                     ticketImageView.setImageURI(selectedImageUri);
                 }
