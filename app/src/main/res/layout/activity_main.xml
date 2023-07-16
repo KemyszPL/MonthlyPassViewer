@@ -20,12 +20,25 @@
 
     <ImageView
         android:id="@+id/ticketImageView"
-        android:layout_width="411dp"
-        android:layout_height="637dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="320dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="30dp"
         android:contentDescription="@string/ticketImageViewDesc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosePictureButton"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Icon Credits"
+        android:text="Icon by icons8 https://icons8.com/icon/Y8iLfEJeABbG/bus"
+        app:layout_constraintBottom_toTopOf="@+id/choosePictureButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
