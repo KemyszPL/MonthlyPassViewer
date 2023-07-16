@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Monthly pass</string>
+    <string name="choosePictureButtonDesc">Button to choose an image from the gallery</string>
+    <string name="choosePictureButtonText">Choose picture</string>
+    <string name="ticketImageViewDesc">Chosen image viewport</string>
+</resources>
