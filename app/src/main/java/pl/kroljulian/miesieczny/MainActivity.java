@@ -26,8 +26,9 @@ public class MainActivity extends AppCompatActivity {
         ticketImageView = findViewById(R.id.ticketImageView);
         SharedPreferences mPrefs = getSharedPreferences("label", 0);
         SharedPreferences.Editor mEditor = mPrefs.edit();
-        Toast.makeText(getApplication().getBaseContext(), "Icon by icons8 https://icons8.com/icon/Y8iLfEJeABbG/bus",
-                Toast.LENGTH_SHORT).show();
+        //LEGAL JUSTIFICATION: According to https://intercom.help/icons8-7fb7577e8170/en/articles/4725508-where-do-i-add-the-link, if the app does not have an "About" section, a link on the app's page is enough.
+        //Toast.makeText(getApplication().getBaseContext(), "Icon by icons8 https://icons8.com/icon/Y8iLfEJeABbG/bus",
+        //        Toast.LENGTH_SHORT).show();
 
         choosePictureButton.setOnClickListener(new View.OnClickListener() {
             @Override
