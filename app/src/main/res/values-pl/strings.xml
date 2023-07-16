@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bilet miesięczny</string>
+    <string name="choosePictureButtonDesc">Przycisk wybierania obrazu z galerii</string>
+    <string name="choosePictureButtonText">Wybierz obraz</string>
+    <string name="ticketImageViewDesc">Podgląd wybranego obrazka</string>
+</resources>
