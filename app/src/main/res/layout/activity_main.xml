@@ -31,14 +31,4 @@
         app:layout_constraintTop_toBottomOf="@+id/choosePictureButton"
         app:layout_constraintVertical_bias="0.05" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="Icon Credits"
-        android:text="Icon by icons8 https://icons8.com/icon/Y8iLfEJeABbG/bus"
-        app:layout_constraintBottom_toTopOf="@+id/choosePictureButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

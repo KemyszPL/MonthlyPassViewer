@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         ticketImageView = findViewById(R.id.ticketImageView);
         SharedPreferences mPrefs = getSharedPreferences("label", 0);
         SharedPreferences.Editor mEditor = mPrefs.edit();
+        Toast.makeText(getApplication().getBaseContext(), "Icon by icons8 https://icons8.com/icon/Y8iLfEJeABbG/bus",
+                Toast.LENGTH_SHORT).show();
 
         choosePictureButton.setOnClickListener(new View.OnClickListener() {
             @Override
